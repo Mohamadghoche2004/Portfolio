@@ -1,0 +1,109 @@
+/* Import the font if not already imported globally */
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+/* Apply the font to all text within the Home component */
+main {
+  font-family: "Plus Jakarta Sans", sans-serif !important;
+}
+
+/* Ensure headings use the font */
+h1,
+h2,
+.display-3,
+.display-5,
+.fs-3,
+.text-gradient {
+  font-family: "Plus Jakarta Sans", sans-serif !important;
+}
+
+/* Apply to other specific elements if needed */
+.badge,
+.btn,
+p {
+  font-family: "Plus Jakarta Sans", sans-serif !important;
+}
+/* Gradient text utility */
+.text-gradient {
+  background: -webkit-linear-gradient(315deg, #1e30f3 0%, #e21e80 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Background gradient utility */
+.bg-gradient-primary-to-secondary {
+  background: linear-gradient(315deg, #1e30f3 0%, #e21e80 100%);
+}
+.text-blue {
+  color: rgb(30, 48, 243) !important;
+}
+
+.resume-container {
+  background-color: #f8f9fa !important;
+}
+
+/* Responsive improvements */
+@media (max-width: 767px) {
+  /* Reduce container padding on mobile */
+  .resume-container .container {
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+  }
+  
+  /* Adjust card padding for mobile */
+  .card-body {
+    padding: 1.5rem !important;
+  }
+  
+  /* Make the experience header section stack on mobile */
+  .resume-container .d-flex.align-items-center.justify-content-between {
+    flex-direction: column;
+    align-items: flex-start !important;
+  }
+  
+  /* Add spacing between title and download button on mobile */
+  .resume-container .d-flex.align-items-center.justify-content-between h2 {
+    margin-bottom: 1rem !important;
+  }
+  
+  /* Make download button full width on mobile */
+  .resume-container .btn.btn-primary {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+  
+  /* Fix spacing in skill items on mobile */
+  .resume-container .col.mb-4.mb-md-0 {
+    margin-bottom: 1rem !important;
+  }
+  
+  /* Ensure text is centered in skill boxes on mobile */
+  .resume-container .d-flex.align-items-center.bg-light {
+    justify-content: center;
+    text-align: center;
+    min-height: 50px;
+  }
+  
+  /* Reduce spacing between sections on mobile */
+  .resume-container section {
+    margin-bottom: 2rem;
+  }
+  
+  /* Adjust spacing in experience cards */
+  .resume-container .bg-light.p-4 {
+    padding: 1rem !important;
+  }
+}
+
+/* Fix for medium sized screens */
+@media (min-width: 768px) and (max-width: 991px) {
+  .card-body {
+    padding: 2rem !important;
+  }
+  
+  .resume-container .gx-5 {
+    --bs-gutter-x: 1.5rem;
+  }
+}

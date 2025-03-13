@@ -1,0 +1,210 @@
+/* Import the font if not already imported globally */
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/* Apply the font to all text within the Home component */
+main {
+  font-family: 'Plus Jakarta Sans', sans-serif !important;
+}
+
+/* Ensure headings use the font */
+h1, h2, .display-3, .display-5, .fs-3, .text-gradient {
+  font-family: 'Plus Jakarta Sans', sans-serif !important;
+}
+
+/* Apply to other specific elements if needed */
+.badge, .btn, p {
+  font-family: 'Plus Jakarta Sans', sans-serif !important;
+}
+/* Gradient text utility */
+.text-gradient {
+    background: -webkit-linear-gradient(315deg, #1e30f3 0%, #e21e80 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  /* Background gradient utility */
+  .bg-gradient-primary-to-secondary {
+    background: linear-gradient(315deg, #1e30f3 0%, #e21e80 100%);
+  }
+  
+  /* Profile section styling */
+  .profile {
+    position: relative;
+    height: 75vw;
+    width: 75vw;
+    border-radius: 4vw;
+    margin-top: 5vw;
+    max-height: 40rem;
+    max-width: 40rem;
+  }
+  .profile .profile-img {
+    height: 80vw;
+    max-height: 45rem;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 1vw;
+    z-index: 0;
+  }
+  .profile .dots-1 {
+    position: absolute;
+    width: 3vw;
+    right: 1.5vw;
+    top: 4vw;
+  }
+  .profile .dots-1 img {
+    fill: #fff;
+    filter: brightness(0) invert(1);
+  }
+  .profile .dots-2 {
+    position: absolute;
+    width: 3vw;
+    right: -4vw;
+    top: 6.05vw;
+  }
+  .profile .dots-2 svg {
+    fill: #1e30f3;
+  }
+  .profile .dots-3 {
+    position: absolute;
+    width: 3vw;
+    left: 1.5vw;
+    bottom: 6.05vw;
+    z-index: 1;
+  }
+  .profile .dots-3 svg {
+    fill: #fff;
+  }
+  .profile .dots-4 {
+    position: absolute;
+    width: 3vw;
+    left: -4vw;
+    bottom: 4vw;
+  }
+  .profile .dots-4 img {
+    fill: #1e30f3;
+    filter: brightness(0) saturate(100%) invert(14%) sepia(75%) saturate(3375%) hue-rotate(226deg) brightness(97%) contrast(98%);
+  }
+  
+  @media (min-width: 576px) {
+    .profile {
+      height: 60vw;
+      width: 60vw;
+    }
+    .profile .profile-img {
+      height: 65vw;
+    }
+    .profile .dots-1 {
+      width: 3vw;
+      right: 1.5vw;
+    }
+    .profile .dots-2 {
+      width: 3vw;
+      right: -4vw;
+    }
+    .profile .dots-3 {
+      width: 3vw;
+      left: 1.5vw;
+    }
+    .profile .dots-4 {
+      width: 3vw;
+      left: -4vw;
+    }
+  }
+  @media (min-width: 768px) {
+    .profile {
+      height: 50vw;
+      width: 50vw;
+    }
+    .profile .profile-img {
+      height: 55vw;
+    }
+    .profile .dots-1 {
+      width: 3vw;
+      right: 1.5vw;
+    }
+    .profile .dots-2 {
+      width: 3vw;
+      right: -4vw;
+    }
+    .profile .dots-3 {
+      width: 3vw;
+      left: 1.5vw;
+    }
+    .profile .dots-4 {
+      width: 3vw;
+      left: -4vw;
+    }
+  }
+  @media (min-width: 992px) {
+    .profile {
+      height: 40vw;
+      width: 40vw;
+    }
+    .profile .profile-img {
+      height: 45vw;
+    }
+    .profile .dots-1 {
+      width: 1.5vw;
+      right: 0.75vw;
+    }
+    .profile .dots-2 {
+      width: 1.5vw;
+      right: -2vw;
+    }
+    .profile .dots-3 {
+      width: 1.5vw;
+      left: 0.75vw;
+    }
+    .profile .dots-4 {
+      width: 1.5vw;
+      left: -2vw;
+    }
+  }
+  @media (min-width: 1200px) {
+    .profile {
+      height: 35vw;
+      width: 35vw;
+    }
+    .profile .profile-img {
+      height: 40vw;
+    }
+    .profile .dots-1 {
+      width: 1.5vw;
+      right: 0.75vw;
+    }
+    .profile .dots-2 {
+      width: 1.5vw;
+      right: -2vw;
+    }
+    .profile .dots-3 {
+      width: 1.5vw;
+      left: 0.75vw;
+    }
+    .profile .dots-4 {
+      width: 1.5vw;
+      left: -2vw;
+    }
+  }
+/* Custom button styling */
+.btn-primary {
+  background-color: #1e30f3 !important;
+  border-color: #1e30f3 !important;
+}
+
+.btn-primary:hover {
+  background-color: #1827cc !important;  /* slightly darker shade for hover */
+  border-color: #1827cc !important;
+} 
+
+/* Consistent styling for all dots */
+.profile .dots-1 img,
+.profile .dots-3 img {
+  filter: brightness(0) invert(1); /* Makes the image white */
+}
+
+.profile .dots-2 img,
+.profile .dots-4 img {
+  filter: brightness(0) saturate(100%) invert(14%) sepia(75%) saturate(3375%) hue-rotate(226deg) brightness(97%) contrast(98%); /* Makes the image blue (#1e30f3) */
+}
