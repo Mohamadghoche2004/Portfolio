@@ -57,7 +57,9 @@ function Home() {
                     className="profile-img"
                     src={MohamadProfile}
                     loading="lazy"
-                    alt="..."
+                    alt="Mohamad Al Ghoche profile"
+                    decoding="async"
+                    fetchpriority="high"
                   />
 
                   <div className=" dots-1 ">
