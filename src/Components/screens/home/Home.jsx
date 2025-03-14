@@ -53,7 +53,12 @@ function Home() {
                   <div className="dots-4">
                     <img src={dots} alt="decorative  " />
                   </div>
-                  <img className="profile-img" src={MohamadProfile} alt="..." />
+                  <img
+                    className="profile-img"
+                    src={MohamadProfile}
+                    loading="lazy"
+                    alt="..."
+                  />
 
                   <div className=" dots-1 ">
                     <img src={dots} alt="decorative " />
